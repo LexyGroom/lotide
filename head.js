@@ -7,7 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const head = function(inputArray){
+const head = function(inputArray) {
   if (inputArray.length > 0) {
     return inputArray[0];
   } else {
