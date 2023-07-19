@@ -25,12 +25,12 @@ const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log("✅ Array Assertion Passed.")
   } else {
-    console.log("🛑 Array Assertion ")
+    console.log("🛑 Array Assertion Failed")
   }
 }
 
 //TESTING
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should pass
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false); // => should pass
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", "3"]), true); // => should pass
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true); // => should fail
+assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should pass
+assertArraysEqual([1, 2, 3], [3, 2, 1]); // => should fail
+assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => should pass
+assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => should fail
