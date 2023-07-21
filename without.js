@@ -20,7 +20,7 @@ const assertArraysEqual = function(array1, array2) {
 //takes in the source array and returns a new array
 //new array is the source array with the requested items removed
 const without = function(source, itemsToRemove) {
-  const result = [];  
+  const result = [];
   //result = source - itemsToRemove
   for (let item of source) {
     if (!itemsToRemove.includes(item)) {
@@ -31,8 +31,8 @@ const without = function(source, itemsToRemove) {
 };
 
 //testing the without function
-console.log(without([1, 2, 3], [1])) // => [2, 3]
-console.log(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
+console.log(without([1, 2, 3], [1])); // => [2, 3]
+console.log(without(["1", "2", "3"], [1, 2, "3"])); // => ["1", "2"]
 
 const words = ["hello", "world", "lighthouse"];
 console.log(without(words, ["lighthouse"]));
