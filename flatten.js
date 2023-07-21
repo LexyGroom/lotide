@@ -18,16 +18,19 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 //takes in an array including nested arrays and returns a single level array
-//flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
 const flatten = function(sourceArray) {
   //check if each element is an array or not
   for (let i = 0; i < sourceArray.length; i++) {
     if (Array.isArray(sourceArray[i])) {
       //remove the nested array and add back without being nested
-      sourceArray.splice(i, 1, ...sourceArray[i])
+      sourceArray.splice(i, 1, ...sourceArray[i]);
     }
   }
   return sourceArray;
 };
 
-console.log(flatten([1, 2, [3, 4], 5, [6]])) // => [1, 2, 3, 4, 5, 6]
+console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
+
+const words = ["hello", ["world", "lighthouse"]];
+console.log(flatten(words));
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
