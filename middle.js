@@ -20,10 +20,10 @@ const assertArraysEqual = function(array1, array2) {
 //takes an array and returns the middle elements
 //for 1-2 elements return empty, odd number return middle, even returns both middle
 const middle = function(array) {
-  const length = array.length
+  const length = array.length;
   //for 1-2 elements returns empty array
   if (length <= 2) {
-    return []
+    return [];
   //for odd number of elements, return middle
   } else if (length % 2 === 1) {
     const mid = Math.floor(length / 2);
