@@ -24,10 +24,10 @@ const countLetters = function(string) {
     }
   }
   return result;
-}
+};
 
 //testing
-console.log(countLetters("lighthouse in the house"))
+console.log(countLetters("lighthouse in the house"));
 
 const words = "Hello";
 console.log(countLetters(words));
