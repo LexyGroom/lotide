@@ -20,13 +20,13 @@ const countOnly = function(allItems, itemsToCount) {
       if (result[item]) {
         result[item]++;
       } else {
-        result[item] = 1
+        result[item] = 1;
       }
     }
   }
   //return result
   return result;
-}
+};
 
 const firstNames = [
   "Karl",
@@ -46,4 +46,4 @@ assertEqual(result1["Jason"], 1);
 assertEqual(result1["Karima"], undefined);
 assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
-assertEqual(result1)
+assertEqual(result1);
