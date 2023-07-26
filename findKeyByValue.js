@@ -10,7 +10,7 @@ const assertEqual = function(actual, expected) {
 
 //scan the object and return the first key that contains the given value
 //if none are found return undefined
-const findKeyByValue = function(object, value) {  
+const findKeyByValue = function(object, value) {
   //creates an array of the keys
   let objectKeys = Object.keys(object);
   let foundKey;
@@ -24,16 +24,16 @@ const findKeyByValue = function(object, value) {
       break;
     }
   }
-  return foundKey; 
+  return foundKey;
 };
 
 //testing
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
+const bestTVShowsByGenre = {
+  sciFi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };
 
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sci_fi");
+assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "sciFi");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
