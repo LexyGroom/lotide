@@ -1,3 +1,13 @@
+// checks if array1 is equal to array 2 returns true or false
+const eqArrays = function(array1, array2) {
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] !== array2[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
 // returns true if both objects have identical keys with identical values
 const eqObjects = function(object1, object2) {
   const object1Keys = Object.keys(object1);
@@ -39,5 +49,5 @@ const assertObjectsEqual = function(actual, expected) {
 };
 
 //testing
-assertObjectsEqual(shirtObject = { color: "red", size: "medium" }, anotherShirtObject = { size: "medium", color: "red" }); //pass
-assertObjectsEqual(shirtObject = { color: "blue", size: "medium" }, anotherShirtObject = { size: "medium", color: "red" }); //fail
+assertObjectsEqual({ color: "red", size: "medium" }, { size: "medium", color: "red" }); //pass
+assertObjectsEqual({ color: "blue", size: "medium" }, { size: "medium", color: "red" }); //fail
