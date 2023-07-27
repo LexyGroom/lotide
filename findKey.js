@@ -12,7 +12,7 @@ const findKey = function(object, callback) {
   let objectKeys = Object.keys(object);
   for (let key of objectKeys) {
     if (callback(object[key])) {
-      console.log(key)
+      console.log(key);
       return key; // Return the key when the callback returns truthy
     }
   }
@@ -26,7 +26,7 @@ findKey({
   "noma":      { stars: 2 },
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 }
-}, x => x.stars === 2) // => "noma"
+}, x => x.stars === 2); // => "noma"
 
 const data = { a: 1, b: 2, c: 3 };
 assertEqual(findKey(data, x => x > 2), 'c');
