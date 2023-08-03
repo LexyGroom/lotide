@@ -1,4 +1,3 @@
-//checks if function is behaving as expected
 //compares the 2 values and prints a pass or fail message
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -8,8 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//scan the object and return the first key that contains the given value
-//if none are found return undefined
+//scans the object and returns the first key that contains the value, if none are found return undefined
 const findKeyByValue = function(object, value) {
   //creates an array of the keys
   let objectKeys = Object.keys(object);

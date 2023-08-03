@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+//checks if array1 is equal to array 2 returns true or false
 const eqArrays = function(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
@@ -8,6 +8,7 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
+//using eqArrays, logs appropriate message
 const assertArraysEqual = function(array1, array2) {
   if (eqArrays(array1, array2)) {
     console.log("✅ Array Assertion Passed.");
@@ -16,7 +17,7 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-//TESTING
+//testing
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // => should pass
 assertArraysEqual([1, 2, 3], [3, 2, 1]); // => should fail
 assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => should pass

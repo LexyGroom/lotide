@@ -1,4 +1,4 @@
-// checks if array1 is equal to array 2 returns true or false
+//checks if array1 is equal to array 2 returns true or false
 const eqArrays = function(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
@@ -8,7 +8,6 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-//checks if function is behaving as expected
 //compares the 2 values and prints a pass or fail message
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -18,8 +17,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// Returns true if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
+//returns true if both objects have identical keys with identical values
 const eqObjects = function(object1, object2) {
   const object1Keys = Object.keys(object1);
   const object2Keys = Object.keys(object2);
@@ -55,6 +53,6 @@ const anotherShirtObject = { size: "medium", color: "red" };
 eqObjects(shirtObject , anotherShirtObject); // => true
 assertEqual(eqObjects(shirtObject , anotherShirtObject), true);
 
-//const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-//eqObjects(shirtObject , longSleeveShirtObject); // => false
-//assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
+const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
+eqObjects(shirtObject , longSleeveShirtObject); // => false
+assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false);

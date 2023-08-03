@@ -1,4 +1,4 @@
-// FUNCTION IMPLEMENTATION
+//compares the 2 values and prints a pass or fail message
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
@@ -7,6 +7,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
+//testing
 assertEqual("Lighthouse Labs", "Bootcamp");
 assertEqual(1, 1);

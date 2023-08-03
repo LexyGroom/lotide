@@ -1,4 +1,3 @@
-// checks if function is behaving as expected
 //compares the 2 values and prints a pass or fail message
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -8,8 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// allItems: an array of strings that we need to look through
-// itemsToCount: an object specifying what to count
+//counts the requested items within an array, array can contain items not being counted
 const countOnly = function(allItems, itemsToCount) {
   const result = {};
 
@@ -28,6 +26,7 @@ const countOnly = function(allItems, itemsToCount) {
   return result;
 };
 
+//testing
 const firstNames = [
   "Karl",
   "Salima",

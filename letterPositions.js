@@ -1,4 +1,4 @@
-// checks if array1 is equal to array 2 returns true or false
+//checks if array1 is equal to array 2 returns true or false
 const eqArrays = function(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
@@ -17,7 +17,7 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-//for each letter return the numbers for all locations it shows up within the string
+//for each letter in a string returns the index for all locations within the string
 const letterPositions = function(sentence) {
   const results = {};
   for (let i = 0; i < sentence.length; i++) {

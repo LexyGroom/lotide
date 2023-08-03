@@ -1,4 +1,4 @@
-// checks if array1 is equal to array 2 returns true or false
+//checks if array1 is equal to array 2 returns true or false
 const eqArrays = function(array1, array2) {
   for (let i = 0; i < array1.length; i++) {
     if (array1[i] !== array2[i]) {
@@ -29,6 +29,7 @@ const flatten = function(sourceArray) {
   return sourceArray;
 };
 
+//testing
 console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
 
 const words = ["hello", ["world", "lighthouse"]];

@@ -1,4 +1,3 @@
-//checks if function is behaving as expected
 //compares the 2 values and prints a pass or fail message
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
@@ -8,15 +7,16 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+//returns object key that fits the callback
 const findKey = function(object, callback) {
   let objectKeys = Object.keys(object);
   for (let key of objectKeys) {
     if (callback(object[key])) {
       console.log(key);
-      return key; // Return the key when the callback returns truthy
+      return key; //returns the key when the callback returns truthy
     }
   }
-  return undefined; // Return undefined if no key satisfies the callback condition
+  return undefined; //returns undefined if no key fits the callback
 };
 
 //testing

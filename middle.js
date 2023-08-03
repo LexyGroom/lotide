@@ -18,7 +18,6 @@ const assertArraysEqual = function(array1, array2) {
 };
 
 //takes an array and returns the middle elements
-//for 1-2 elements return empty, odd number return middle, even returns both middle
 const middle = function(array) {
   const length = array.length;
   //for 1-2 elements returns empty array
@@ -45,5 +44,5 @@ console.log(middle([])); // []
 
 const words = ["hello", "world", "lighthouse"];
 console.log(middle(words));
-// Make sure the original array was not altered by the without function
+//make sure the original array was not altered by the function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
