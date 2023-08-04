@@ -1,11 +1,19 @@
-//compares the 2 values and prints a pass or fail message
-const assertEqual = require('../assertEqual')
+const assert = require('chai').assert;
 //takes a string and returns a count of each of the letters
 const countLetters = require('../countLetters')
 
-//testing
-console.log(countLetters("lighthouse in the house"));
-const words = "Hello";
-console.log(countLetters(words));
-//make sure the original was not altered by the function
-assertEqual(words, "Hello");
+describe("#countLetters", () => {
+
+  it('returns {l: 2, h: 1} for ("LHL")', () => {
+    assert.deepEqual(countLetters("LHL"), {l: 2, h: 1});
+  });
+
+  it('returns {h: 1, e: 1, l: 3, o: 2, w: 1, r: 1, d: 1} for ("Hello World")', () => {
+    assert.deepEqual(countLetters("Hello World"), {h: 1, e: 1, l: 3, o: 2, w: 1, r: 1, d: 1});
+  });
+
+  it('returns {} for ("")', () => {
+    assert.deepEqual(countLetters(""), {});
+  });
+
+});

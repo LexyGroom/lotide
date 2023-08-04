@@ -1,6 +1,3 @@
-//compares the 2 values and prints a pass or fail message
-const assertEqual = require('../assertEqual');
-
 //takes a string and returns a count of each of the letters
 //countLetters('LHL') => L appears twice, and H appears once {l: 2, h: 1}
 const countLetters = function(string) {
