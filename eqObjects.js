@@ -1,21 +1,5 @@
 //checks if array1 is equal to array 2 returns true or false
-const eqArrays = function(array1, array2) {
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-//compares the 2 values and prints a pass or fail message
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const eqArrays = require('./eqArrays')
 
 //returns true if both objects have identical keys with identical values
 const eqObjects = function(object1, object2) {
@@ -48,13 +32,3 @@ const eqObjects = function(object1, object2) {
 };
 
 module.exports = eqObjects;
-
-//testing
-const shirtObject = { color: "red", size: "medium" };
-const anotherShirtObject = { size: "medium", color: "red" };
-eqObjects(shirtObject , anotherShirtObject); // => true
-assertEqual(eqObjects(shirtObject , anotherShirtObject), true);
-
-const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
-eqObjects(shirtObject , longSleeveShirtObject); // => false
-assertEqual(eqObjects(shirtObject , longSleeveShirtObject), false);
