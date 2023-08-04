@@ -19,11 +19,3 @@ const countLetters = function(string) {
 };
 
 module.exports = countLetters;
-
-//testing
-console.log(countLetters("lighthouse in the house"));
-
-const words = "Hello";
-console.log(countLetters(words));
-//make sure the original was not altered by the function
-assertEqual(words, "Hello");
