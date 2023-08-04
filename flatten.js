@@ -29,6 +29,8 @@ const flatten = function(sourceArray) {
   return sourceArray;
 };
 
+module.exports = flatten;
+
 //testing
 console.log(flatten([1, 2, [3, 4], 5, [6]])); // => [1, 2, 3, 4, 5, 6]
 

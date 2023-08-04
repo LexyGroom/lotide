@@ -1,11 +1,5 @@
 //compares the 2 values and prints a pass or fail message
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('../assertEqual');
 
 //takes a string and returns a count of each of the letters
 //countLetters('LHL') => L appears twice, and H appears once {l: 2, h: 1}
@@ -23,6 +17,8 @@ const countLetters = function(string) {
   }
   return result;
 };
+
+module.exports = countLetters;
 
 //testing
 console.log(countLetters("lighthouse in the house"));

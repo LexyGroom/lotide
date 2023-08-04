@@ -25,6 +25,8 @@ const findKeyByValue = function(object, value) {
   return foundKey;
 };
 
+module.exports = findKeyByValue;
+
 //testing
 const bestTVShowsByGenre = {
   sciFi: "The Expanse",

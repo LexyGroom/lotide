@@ -19,6 +19,8 @@ const findKey = function(object, callback) {
   return undefined; //returns undefined if no key fits the callback
 };
 
+module.exports = findKey;
+
 //testing
 findKey({
   "Blue Hill": { stars: 1 },

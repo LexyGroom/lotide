@@ -36,6 +36,8 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 //testing
 console.log(letterPositions("hello"));
 assertArraysEqual(letterPositions("hello").l, [2, 3]);
