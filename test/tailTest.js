@@ -1,7 +1,5 @@
 const assert = require('chai').assert;
 //compares the 2 values and prints a pass or fail message
-const assertEqual = require('../assertEqual');
-//returns all items in an array except for the first
 const tail = require('../tail');
 
 //testing

@@ -1,6 +1,4 @@
 const assert = require('chai').assert;
-//using eqArrays, logs appropriate message
-const assertArraysEqual = require('../assertArraysEqual')
 //takes an array and returns the middle elements
 const middle = require('../middle')
 
