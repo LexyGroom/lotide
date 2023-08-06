@@ -1,13 +1,19 @@
 //takes in an array including nested arrays and returns a single level array
 const flatten = function(sourceArray) {
-  //check if each element is an array or not
+  let newArray = [];
+  //check if each element in the array is an array or not
   for (let i = 0; i < sourceArray.length; i++) {
     if (Array.isArray(sourceArray[i])) {
-      //remove the nested array and add back without being nested
-      sourceArray.splice(i, 1, ...sourceArray[i]);
+      //recursion for deeply nested arrays
+      const nested = flatten(sourceArray[i]);
+      //add to new array
+      newArray = newArray.concat(nested);
+    } else {
+      //add to new array if not nested
+      newArray.push(sourceArray[i]);
     }
   }
-  return sourceArray;
+  return newArray;
 };
 
 module.exports = flatten;
