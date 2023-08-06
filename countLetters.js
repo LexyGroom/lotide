@@ -7,7 +7,7 @@ const countLetters = function(string) {
     //check if it's a letter
     if (/[a-zA-Z]/.test(letter)) {
       //add to count
-      result[lowercase] = (result[lowercase] || 0) + 1;
+      result[letter] = (result[letter] || 0) + 1;
     }
   }
   return result;
