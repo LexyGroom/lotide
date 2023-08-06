@@ -6,8 +6,6 @@ const countLetters = function(string) {
   for (const letter of string) {
     //check if it's a letter
     if (/[a-zA-Z]/.test(letter)) {
-      //change to lowercase
-      const lowercase = letter.toLowerCase();
       //add to count
       result[lowercase] = (result[lowercase] || 0) + 1;
     }
