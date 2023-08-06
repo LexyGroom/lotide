@@ -17,8 +17,12 @@ describe("#tail", () => {
     assert.deepEqual(tail([1]), []);
   });
 
-  it("returns [] for []", () => {
-    assert.deepEqual(tail([]), []);
+  it("returns undefined for []", () => {
+    assert.deepEqual(tail([]), undefined);
+  });
+
+  it("returns undefined for ", () => {
+    assert.deepEqual(tail(), undefined);
   });
 
 });
