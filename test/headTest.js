@@ -19,7 +19,15 @@ describe("#head", () => {
     assert.strictEqual(head(["Single"]), "Single");
   });
 
+  it('returns undefined for 1', () => {
+    assert.strictEqual(head(1), undefined);
+  });
+
   it('returns undefined for []', () => {
     assert.strictEqual(head([]), undefined);
+  });
+
+    it('returns undefined for ', () => {
+    assert.strictEqual(head(), undefined);
   });
 });
