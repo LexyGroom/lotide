@@ -4,13 +4,11 @@ const letterPositions = function(sentence) {
   for (let i = 0; i < sentence.length; i++) {
     //check if it's a letter
     if (/[a-zA-Z]/.test(sentence[i])) {
-      //change to lowercase
-      const lowercase = sentence[i].toLowerCase();
       //add to results
-      if (!results[lowercase]) {
-        results[lowercase] = [i];
+      if (!results[sentence[i]]) {
+        results[sentence[i]] = [i];
       } else {
-        results[lowercase].push(i);
+        results[sentence[i]].push(i);
       }
     }
   }

@@ -4,8 +4,12 @@ const letterPositions = require('../letterPositions')
 
 describe("#letterPositions", () => {
 
-  it('returns [2, 3] for ("hello").l', () => {
+  it('returns [2,3] for ("hello").l', () => {
     assert.deepEqual(letterPositions("hello").l, [2, 3]);
+  });
+
+    it('returns [0] for ("Hello").h', () => {
+    assert.deepEqual(letterPositions("Hello").H, [0]);
   });
 
 });
